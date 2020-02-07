@@ -16,8 +16,11 @@
                     <li><a href="dodajPesmu.php">Dodaj Pesmu</a></li>
                     <li><a href="kontakt.php">Kontakt</a></li>
                 </ul>
-
-
+            <ul class='nav navbar-nav navbar-right'>
+            <li><a href="{{route('login')}}">Uloguj se</a></li>
+            <li><a href="{{route('register')}}">Registruj se</a></li>
+            </ul>
+            
         </div>
     </div>
 </nav>
