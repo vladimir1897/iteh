@@ -20,7 +20,7 @@ class CreatePesme extends Migration
             $table->double('Cena');
             $table->string('Slika');
             $table->integer('ZanrID');
-            $table->integer('UserID');
+            $table->string('Autor');
 
             $table->timestamps();
 

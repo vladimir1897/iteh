@@ -9,10 +9,14 @@ class Narudzbina extends Model
     protected $fillable = [
         'id', 'Korisnik', 'Cena'
        ];
-       protected $table = 'narudzbine';
+       protected $table = 'narudzbina';
 
        public function pesme(){
 
         return $this->belongsToMany('App\Pesma');
+       }
+
+       public function user(){
+           return $this->belongsTo('App\User','userID');
        }
 }

@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('css/footer.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/jplayer.blue.monday.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.blue.monday.css')}}">
-  <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/390385b9e9.js"></script>
   @stack('styles')
   <script src="JS/js.js"></script>
 
@@ -17,23 +17,24 @@
 </head>
 <body>
   <example-component></example-component>
-   @include('layouts.nav');
-   
+   @include('layouts.nav')
+
    @yield('content')
-   
-    
- 
-       
-    
-      
+
+
+
+
+
+
       @include('layouts.footer');
-    
+
   </body>
-    
+
     <script src="{{asset('js/app.js')}}"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     @stack('scripts')
 
-    
+
 </html>

@@ -18,6 +18,6 @@ class Pesma extends Model
    }
 
    public function zanr(){
-      return $this->belongsTo(Zanr::class);
+      return $this->belongsTo(Zanr::class,'ZanrID');
    }
 }

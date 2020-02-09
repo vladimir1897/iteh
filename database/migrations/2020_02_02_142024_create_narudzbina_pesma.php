@@ -14,8 +14,8 @@ class CreateNarudzbinaPesma extends Migration
     public function up()
     {
         Schema::create('narudzbina_pesma', function (Blueprint $table) {
-            $table->integer('pesmaID');
-            $table->integer('narudzbinaID');
+            $table->integer('narudzbina_id');
+            $table->integer('pesma_id');
             $table->timestamps();
         });
     }
